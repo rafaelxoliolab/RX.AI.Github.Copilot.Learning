@@ -15,3 +15,6 @@ jobs:
       uses: actions/setup-node
       with:
         node-version: "18"
+    - name: Authenticate with our API Key
+      run: echo "API_KEY=${{ secrets.API_KEY }}" >> .secret
+
